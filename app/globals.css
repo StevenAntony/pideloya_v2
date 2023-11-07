@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --color-app: #F44236;
+
+  --color-app-50: #fef3f2;
+  --color-app-100: #ffe3e1;
+  --color-app-200: #ffcbc8;
+  --color-app-300: #ffa8a2;
+  --color-app-400: #fc766d;
+  --color-app-500: #f44236;
+  --color-app-600: #e22c20;
+  --color-app-700: #be2217;
+  --color-app-800: #9d1f17;
+  --color-app-900: #82211a;
+  --color-app-950: #470c08;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
