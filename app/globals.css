@@ -4,22 +4,22 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 
-  --color-app: #F44236;
+  --color-app: #f6083d;
 
-  --color-app-50: #fef3f2;
-  --color-app-100: #ffe3e1;
-  --color-app-200: #ffcbc8;
-  --color-app-300: #ffa8a2;
-  --color-app-400: #fc766d;
-  --color-app-500: #f44236;
-  --color-app-600: #e22c20;
-  --color-app-700: #be2217;
-  --color-app-800: #9d1f17;
-  --color-app-900: #82211a;
-  --color-app-950: #470c08;
+  --color-app-50: #fff0f1;
+  --color-app-100: #ffe1e4;
+  --color-app-200: #ffc8cf;
+  --color-app-300: #ff9ba8;
+  --color-app-400: #ff637c;
+  --color-app-500: #ff2c53;
+  --color-app-600: #f6083d;
+  --color-app-700: #c20030;
+  --color-app-800: #ae0333;
+  --color-app-900: #940732;
+  --color-app-950: #530016;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -38,4 +38,19 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.box-shadow-app{
+  box-shadow: -1px 4px 22px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: -1px 4px 22px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: -1px 4px 22px 0px rgba(0,0,0,0.3);
+}
+
+.pilltab-layout::-webkit-scrollbar {
+  display: none;
+}
+
+.pilltab-layout{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
