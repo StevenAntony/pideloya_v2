@@ -29,8 +29,44 @@ const list = async () => {
     }
 }
 
+const getTableOrders = async (id:number) => {
+    const response = await Api.Get(`mesa/${id}`)
+    let data: ITableOrder|null = null
+
+    if (response) {
+        let order: Array<IOrder> = [] 
+        if(response.datosMesa){
+            response.datosMesa.forEach((element:any) => {
+                order.push({
+                    id: element.idDM,
+                    amount: element.precio,
+                    description: element.descripcionPro,
+                    idProduct: element.idProducto,
+                    idStore: element.idAlmacen,
+                    quantity: element.cantidad
+                })
+            })
+        }
+
+        data = {
+            id: response.id,
+            description: response.descripcion,
+            state: response.estado,
+            order: order
+        }
+    }
+    
+    
+    return {
+        success: true,
+        data: data,
+        message: 'Datos obtenidos'
+    }
+}
+
 const TableService = {
-    list
+    list,
+    getTableOrders
 }
 
 export default TableService

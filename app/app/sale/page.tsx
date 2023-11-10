@@ -2,7 +2,7 @@ import Sale from '@/components/page/app/sale/Sale';
 
 const SalePage = () => {
     return (
-        <div className='pt-[70px]'>
+        <div className='sm:pt-0 pt-[70px]'>
             <Sale />
         </div>
     )

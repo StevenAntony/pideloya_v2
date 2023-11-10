@@ -20,7 +20,7 @@ const AppMobile = () =>{
 
   return (
     <div>
-      <div className='pt-[70px] min-h-screen bg-white'>
+      <div className='pt-[70px] min-h-screen bg-white pb-[100px]'>
         {componentActive(isTabActive)}
       </div>
       <PillTabs 

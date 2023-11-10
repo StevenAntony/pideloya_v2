@@ -1,4 +1,5 @@
 'use client'
+import LayoutDesktop from "@/components/layouts/LayoutDesktop";
 import LayoutMobile from "@/components/layouts/LayoutMobile";
 import LoadingApp from "@/components/loading/LoadingApp";
 import useMobile from "@/hooks/useMobile";
@@ -26,7 +27,7 @@ export default function AppLayout({
 
   return (
     <div className='bg-white h-screen'>
-      { isMobile ? <LayoutMobile>{children}</LayoutMobile> : children }
+      { isMobile ? <LayoutMobile>{children}</LayoutMobile> : <LayoutDesktop>{children}</LayoutDesktop> }
     </div>
   )
 }  

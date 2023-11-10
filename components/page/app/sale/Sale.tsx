@@ -5,9 +5,12 @@ import TableSale from './TableSale';
 import DeliverySale from './DeliverySale'
 import { useEffect, useState } from 'react';
 import TableService from '@/service/TableService';
+import ProductService from '@/service/ProductService';
 
 const Sale = () => {
     const [isTables, setTables] = useState<Array<ITable>>([])
+    const [isProducts, setProducts] = useState<Array<IProductForSale>>([])
+    const [isOpenModalSelectProduct, setOpenModalSelectProduct] = useState<boolean>(false)
 
     const getTables =async () => {
         const response =await TableService.list()
@@ -15,6 +18,22 @@ const Sale = () => {
         if (response.success) {
             setTables(response.data)
         }
+    }
+
+    const getProducts =async () => {
+        const response = await ProductService.getProductForSale()
+
+        if (response.success) {
+            setProducts(response.data)
+        }
+    }
+
+    const showOpenModalSelectProduct = () => {
+        setOpenModalSelectProduct(true)
+    }
+
+    const closeOpenModalSelectProduct = () => {
+        setOpenModalSelectProduct(false)
     }
 
     const typeSale = [
@@ -27,7 +46,11 @@ const Sale = () => {
             label: 'Mesas',
             key: 'table',
             children: <TableSale 
+                showOpenModalSelectProduct={showOpenModalSelectProduct}
+                closeOpenModalSelectProduct={closeOpenModalSelectProduct}
+                isOpenModalSelectProduct={isOpenModalSelectProduct}
                 isTables={isTables}
+                isProducts={isProducts}
             />
         },
         {
@@ -38,12 +61,12 @@ const Sale = () => {
     ]
 
     const onChange = (key: string) => {
-        console.log(key);
+        console.log(key)
     }
 
     useEffect(() => {
         getTables()
-
+        getProducts()
         return () => {
         }
     }, [])
