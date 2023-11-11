@@ -4,16 +4,26 @@ import { PlusOutlined } from '@ant-design/icons'
 
 export default function DetailTableOrder({
     orders,
-    showOpenModalSelectProduct
+    showOpenModalSelectProduct,
+    updateOrderToTableOrderData,
+    isForceRenderDetail
 }:{
     orders: Array<IOrder>;
     showOpenModalSelectProduct: () => void;
+    updateOrderToTableOrderData: (o: IOrder, i: number) => void;
+    isForceRenderDetail: boolean
 }) {
     return (
         <div className="grid gap-6">
             {
-                orders.map(order => {
-                    return <ItemOrder key={order.id} order={order} />
+                orders.map((order, index) => {
+                    return <ItemOrder 
+                            key={order.id} 
+                            order={order} 
+                            index={index} 
+                            updateOrderToTableOrderData={updateOrderToTableOrderData}
+                            isForceRenderDetail={isForceRenderDetail}
+                        />
                 })
             }
             <div>

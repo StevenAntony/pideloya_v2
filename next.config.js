@@ -1,5 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    async rewrites() {
+        return [
+          {
+            source: '/api/:path*',
+            destination: 'http://restaurant.pideloya.click/api/:path*', // Cambia esto por la URL correcta de tu API HTTP
+          },
+        ];
+    },
     reactStrictMode: true, // Enable React strict mode for improved error handling
     swcMinify: true,      // Enable SWC minification for improved performance
     compiler: {

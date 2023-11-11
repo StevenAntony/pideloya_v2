@@ -43,7 +43,9 @@ const getTableOrders = async (id:number) => {
                     description: element.descripcionPro,
                     idProduct: element.idProducto,
                     idStore: element.idAlmacen,
-                    quantity: element.cantidad
+                    quantity: element.cantidad,
+                    action: 'save',
+                    originalQuantity: element.cantidad
                 })
             })
         }

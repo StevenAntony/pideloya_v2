@@ -23,6 +23,7 @@ const TableSale = ({
     const [isLoadingTableOrderData, setLoadingTableOrderData] = useState<boolean>(false)
     const [isTableOrderData, setTableOrderData] = useState<ITableOrder|null>(null)
     const [isOpenTableOrderInformation, setOpenTableOrderInformation] = useState<boolean>(false)
+    const [isForceRenderDetail, setForceRenderDetail] = useState<boolean>(false)
     
     const onCloseTableOrderInformation = () => {
         setOpenTableOrderInformation(false)
@@ -41,6 +42,22 @@ const TableSale = ({
         return orders.reduce(function(total, order) {
             return total + (order.amount* order.quantity)
             }, 0)
+    }
+
+    const addNewOrderToTableOrderData = (order: IOrder) => {
+        if (isTableOrderData != null) {   
+            isTableOrderData.order.push(order)
+            setTableOrderData(isTableOrderData)
+        }
+    }
+
+    const updateOrderToTableOrderData = (order: IOrder, index: number) => {
+        
+        if (isTableOrderData != null) {   
+            isTableOrderData.order[index] = order
+            setTableOrderData(isTableOrderData)
+            setForceRenderDetail(!isForceRenderDetail)
+        }
     }
 
     return (
@@ -96,6 +113,8 @@ const TableSale = ({
                             : <DetailTableOrder 
                                 showOpenModalSelectProduct={showOpenModalSelectProduct}
                                 orders={isTableOrderData != null ? isTableOrderData.order : []}
+                                updateOrderToTableOrderData={updateOrderToTableOrderData}
+                                isForceRenderDetail={isForceRenderDetail}
                             />
                         }
                 </Drawer>
@@ -103,6 +122,7 @@ const TableSale = ({
                     closeOpenModalSelectProduct={closeOpenModalSelectProduct}
                     isOpenModalSelectProduct={isOpenModalSelectProduct}
                     isProducts={isProducts}
+                    addNewOrderToTableOrderData={addNewOrderToTableOrderData}
                 />
             </div>
         </div>

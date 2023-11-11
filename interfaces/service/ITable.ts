@@ -5,19 +5,3 @@ interface ITable {
     description: string;
     time: number|null;
 }
-
-interface IOrder {
-    id: number;
-    quantity: number;
-    amount: number;
-    idProduct: string;
-    idStore: number;
-    description: string;
-}
-
-interface ITableOrder {
-    id: number;
-    description: string;
-    state: 'Libre'|'Ocupado';
-    order: Array<IOrder>
-}

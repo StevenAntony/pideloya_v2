@@ -64,6 +64,10 @@ body {
   padding: 0px!important;
 }
 
+.modal-select-product .ant-input-number-group-addon{
+  padding: 0px!important;
+}
+
 button .anticon svg{
   margin-top: -10px;
 }
