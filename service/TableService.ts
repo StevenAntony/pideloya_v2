@@ -66,9 +66,20 @@ const getTableOrders = async (id:number) => {
     }
 }
 
+const sendOrders = async (params: IRequestSendOrder) => {
+    const response = await Api.Post(`pedido`, params)    
+    
+    return {
+        success: response.registro,
+        data: null,
+        message: response.registro ? 'Registro correctamente' : 'Error al registrar'
+    }
+}
+
 const TableService = {
     list,
-    getTableOrders
+    getTableOrders,
+    sendOrders
 }
 
 export default TableService

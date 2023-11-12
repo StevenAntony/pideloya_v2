@@ -18,3 +18,13 @@ interface ITableOrder {
     state: 'Libre'|'Ocupado';
     order: Array<IOrder>
 }
+
+interface ISale {
+    id: string;
+    serie: string;
+    number: number,
+    issue: string,
+    customer: string,
+    seller: string,
+    state: string;
+}

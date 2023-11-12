@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ListTableSale from "./tableSale/ListTableSale"
 import { Button, Drawer, Space } from 'antd'
 import TableService from "@/service/TableService";
@@ -6,6 +6,7 @@ import LoadingApp from "@/components/loading/LoadingApp";
 import DetailTableOrder from "./tableSale/DetailTableOrder";
 import FormatCurrency from "@/helpers/FormatCurrency";
 import ModalSelectProduct from "./ModalSelectProduct";
+import { useAuthContext } from "@/contexts/AuthContext";
 
 const TableSale = ({
     isTables,
@@ -21,9 +22,14 @@ const TableSale = ({
     isProducts: Array<IProductForSale>;
 }) => {
     const [isLoadingTableOrderData, setLoadingTableOrderData] = useState<boolean>(false)
+    const [isLoadingSendOrders, setLoadingSendOrders] = useState<boolean>(false)
+
     const [isTableOrderData, setTableOrderData] = useState<ITableOrder|null>(null)
     const [isOpenTableOrderInformation, setOpenTableOrderInformation] = useState<boolean>(false)
     const [isForceRenderDetail, setForceRenderDetail] = useState<boolean>(false)
+    const [isAvailableToOrder, setAvailableToOrder] = useState<boolean>(false)
+
+    const { authTokens } = useAuthContext()
     
     const onCloseTableOrderInformation = () => {
         setOpenTableOrderInformation(false)
@@ -48,6 +54,9 @@ const TableSale = ({
         if (isTableOrderData != null) {   
             isTableOrderData.order.push(order)
             setTableOrderData(isTableOrderData)
+
+            const availableToOrder = isTableOrderData.order.filter(obj => obj.action == 'new').length != 0
+            setAvailableToOrder(availableToOrder)
         }
     }
 
@@ -57,6 +66,35 @@ const TableSale = ({
             isTableOrderData.order[index] = order
             setTableOrderData(isTableOrderData)
             setForceRenderDetail(!isForceRenderDetail)
+        }
+    }
+
+    const sendOrders = async () => {
+        if (isTableOrderData != null) {
+            setLoadingSendOrders(true)
+            const filterSend = isTableOrderData.order.filter(obj => obj.action == 'new')
+            
+            const notes = filterSend.map(obj => {return obj.note})
+            const idProducts = filterSend.map(obj => {return obj.idProduct})
+            const quantitys = filterSend.map(obj => {return obj.quantity})
+            const stores = filterSend.map(obj => {return obj.idStore})
+            
+            const response = await TableService.sendOrders({
+                almacen: stores.join(','),
+                cantidad: quantitys.join(','),
+                codigoProducto: idProducts.join(','),
+                mesa: isTableOrderData.id,
+                mozo: authTokens.user.id,
+                nota: notes.join(',')
+            })
+
+            if (response.success) {
+                showDrawerTableOrderInformation(isTableOrderData.id)
+            }else{
+                
+            }
+            setAvailableToOrder(false)
+            setLoadingSendOrders(false)
         }
     }
 
@@ -84,7 +122,12 @@ const TableSale = ({
                     maskClosable={false}
                     extra={
                         <Space>
-                            <Button className="bg-blue-600 !text-white"  onClick={() => {}}>
+                            <Button 
+                                className="bg-blue-600 !text-white"  
+                                onClick={sendOrders}
+                                disabled={!isAvailableToOrder}
+                                loading={isLoadingSendOrders}
+                            >
                                 Actualizar
                             </Button>
                         </Space>

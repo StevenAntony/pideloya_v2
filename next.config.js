@@ -4,7 +4,7 @@ const nextConfig = {
         return [
           {
             source: '/api/:path*',
-            destination: 'http://restaurant.pideloya.click/api/:path*', // Cambia esto por la URL correcta de tu API HTTP
+            destination: 'http://restaurant.pideloya.click/api/:path*', // Cambia esto según tu configuración
           },
         ];
     },

@@ -1,0 +1,4502 @@
+[
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 275633,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 392859,
+       "issue": "13",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 92239,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 835013,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 636772,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 124336,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 318372,
+       "issue": "13",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 886320,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 819544,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 586752,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 474827,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "F001",
+       "number": 854136,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 14052,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 833127,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 447986,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 762872,
+       "issue": "13",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "F001",
+       "number": 803075,
+       "issue": "13",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 740102,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 209488,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 848938,
+       "issue": "12",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 803161,
+       "issue": "13",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 373509,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 885643,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 498672,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 511135,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "F001",
+       "number": 402253,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 203145,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 610532,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 732861,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 11911,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 218307,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 943606,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 377709,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 98483,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 428923,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 570983,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 888599,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 714675,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 45386,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 523475,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 99633,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 709759,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 211484,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 728454,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 60439,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 333942,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 590741,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "F001",
+       "number": 437178,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 749654,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 815352,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 80480,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 168935,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 503973,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 472888,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 439741,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 172735,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 776595,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 581607,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 731054,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 678521,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 399355,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 503706,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 858356,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 120086,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 596743,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 397238,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 223626,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 502525,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 20724,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 875517,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 667221,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 655510,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 414358,
+       "issue": "13",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 654873,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 670728,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 768267,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 476036,
+       "issue": "12",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 847047,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 29316,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 615396,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 949245,
+       "issue": "13",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 965872,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 510385,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 589109,
+       "issue": "12",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 90108,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 487808,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 683800,
+       "issue": "13",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 165361,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 554588,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 389492,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 576886,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 861804,
+       "issue": "13",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 74370,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 333829,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 479415,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 517216,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 222897,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 474574,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 707045,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 407424,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 157917,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 625567,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 731977,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 988572,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 996992,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 696373,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 235170,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 167253,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 177407,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 503341,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 784211,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 221988,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 648617,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 816927,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 310010,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 844046,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 714084,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 760851,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 901360,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 750035,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 661965,
+       "issue": "12",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 810422,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 460178,
+       "issue": "12",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 235347,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 46648,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 126398,
+       "issue": "12",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 657303,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 941929,
+       "issue": "13",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 942205,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 526526,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 114933,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 30443,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 536937,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 341424,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 850536,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 199596,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 668765,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 579149,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 470525,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 141545,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 56911,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 34910,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 347084,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 491317,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 406606,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 824678,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 333175,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 752875,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 104361,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 432017,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 569238,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 535231,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 49383,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 308263,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 759058,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 841085,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 132600,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 947634,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 692028,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 3943,
+       "issue": "12",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 367377,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 71857,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 442555,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 852392,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 935307,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 301009,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 478161,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 98346,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 40484,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 849605,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 59217,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 419829,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 362079,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 327181,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 606445,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 982284,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 672593,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 316114,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 70695,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 679862,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "F001",
+       "number": 438316,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 154588,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 407716,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 84707,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 762969,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 56323,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 906377,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 808350,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 655499,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 221144,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 485351,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 490235,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 994946,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 909247,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 707168,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 378285,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 756843,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 837027,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 909015,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 29132,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 538626,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 762381,
+       "issue": "13",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 123370,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 692737,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 238611,
+       "issue": "13",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 504937,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 460011,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 341489,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 889350,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 161797,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 274959,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 722200,
+       "issue": "13",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 685839,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 840937,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 37706,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 715125,
+       "issue": "13",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 456850,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 598559,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 281803,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 131679,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 456390,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 47532,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 265384,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 910963,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 500932,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 186258,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 838778,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 80855,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 400399,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 17975,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 314451,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 603673,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 502721,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 988292,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 357912,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 533877,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 26681,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 401082,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 441746,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 741048,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 157734,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 252513,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 893453,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 550738,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 685636,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 482165,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 947791,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 99493,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 222841,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 429923,
+       "issue": "13",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 630421,
+       "issue": "13",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 473115,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 552579,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 726309,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 880807,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 878906,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 33253,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 312975,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 591599,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 474665,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 887254,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 5280,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 739989,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 70660,
+       "issue": "13",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 724014,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 852544,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 77808,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 689798,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 573888,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 992444,
+       "issue": "13",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "F001",
+       "number": 435070,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "F001",
+       "number": 956459,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 448247,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 61579,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 689248,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 984939,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 473814,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 632190,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 71070,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 553032,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 655928,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 43315,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 245500,
+       "issue": "13",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 525467,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 826091,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 825796,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 952056,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 574389,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 30803,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 260299,
+       "issue": "13",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 365875,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 400731,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 14085,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 92534,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 53153,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 832039,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 683393,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 428193,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 720284,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 123057,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 421213,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 423912,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 792117,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 995337,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 990718,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 783301,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 245267,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 385846,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 373592,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "F001",
+       "number": 836331,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 196492,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 423036,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 991104,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 444602,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 951929,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 739711,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 135063,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 475091,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 938187,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 515996,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 728682,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 928818,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 865852,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 138741,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 821040,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 481270,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 47147,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 361138,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 659438,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 52615,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 411926,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 727478,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 699476,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 720082,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 838184,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 314998,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 931514,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "F001",
+       "number": 174005,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 8132,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 955840,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 729444,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 860874,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 216375,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 825708,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 488290,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 501367,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 649221,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 470506,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 960636,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 72259,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 335737,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 815215,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 100831,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 521540,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 481735,
+       "issue": "12",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 209982,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 861111,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 832658,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 20664,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 595733,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 935060,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 516692,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 869030,
+       "issue": "12",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 475503,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 23424,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 427334,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 892312,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 207410,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 126607,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 876310,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 772893,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 328459,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 600779,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 978360,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 700604,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 148202,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 304837,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 746272,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 414222,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 907767,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 650903,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 141072,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 261345,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 883937,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 358857,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 928253,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 506862,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 286051,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 971317,
+       "issue": "12",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 869068,
+       "issue": "13",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 596559,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 92555,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 431948,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 711852,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 202463,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 673396,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 653289,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 769772,
+       "issue": "12",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 877308,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 165278,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 74060,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 819597,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 470114,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 622658,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "B001",
+       "number": 871414,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 120728,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 23047,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 533171,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 93735,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 658551,
+       "issue": "12",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 810772,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 376443,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 202307,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 68501,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 273530,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 627751,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 848072,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 344281,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 839981,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 350557,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 644756,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 903362,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 969590,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 441947,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 809367,
+       "issue": "13",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 885969,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 408043,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 126618,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 653439,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 174173,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 147170,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 860730,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 133973,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 937545,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 493809,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 980136,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 503138,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "F001",
+       "number": 460786,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 110649,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 985649,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 298639,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 697576,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 833501,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 48690,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 31366,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 893430,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 992833,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "0001",
+       "number": 678024,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 896017,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 878919,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 579099,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "F001",
+       "number": 9408,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 628249,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 772909,
+       "issue": "12",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 652130,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 274531,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 835996,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 1,
+       "serie": "B001",
+       "number": 170553,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 8,
+       "serie": "F001",
+       "number": 101997,
+       "issue": "12",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 206599,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 998741,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 629414,
+       "issue": "13",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 8,
+       "serie": "B001",
+       "number": 113205,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 996701,
+       "issue": "12",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 4,
+       "serie": "B001",
+       "number": 873215,
+       "issue": "2023",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 751870,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 451598,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 1,
+       "serie": "F001",
+       "number": 303383,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 674500,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 642255,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 524023,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 8,
+       "serie": "0001",
+       "number": 980046,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "0001",
+       "number": 549175,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 718475,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 7,
+       "serie": "0001",
+       "number": 669342,
+       "issue": "12",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "0001",
+       "number": 957263,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 882854,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "0001",
+       "number": 437505,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 652752,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 3,
+       "serie": "B001",
+       "number": 923901,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 3,
+       "serie": "0001",
+       "number": 228106,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 0,
+       "serie": "B001",
+       "number": 848288,
+       "issue": "2023",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 2,
+       "serie": "F001",
+       "number": 365152,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 6,
+       "serie": "B001",
+       "number": 164690,
+       "issue": "11",
+       "customer": "Eduardo",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "F001",
+       "number": 87345,
+       "issue": "2023",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 434846,
+       "issue": "12",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "cobrado"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 973030,
+       "issue": "11",
+       "customer": "Steven",
+       "seller": "Administrador",
+       "state": "pendiente"
+    },
+    {
+       "id": 5,
+       "serie": "B001",
+       "number": 644083,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 3,
+       "serie": "F001",
+       "number": 548907,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 4,
+       "serie": "F001",
+       "number": 220152,
+       "issue": "13",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 775239,
+       "issue": "13",
+       "customer": "Juan",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 0,
+       "serie": "0001",
+       "number": 838460,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 201771,
+       "issue": "13",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 2,
+       "serie": "B001",
+       "number": 526628,
+       "issue": "2023",
+       "customer": "Eduardo",
+       "seller": "Administrador",
+       "state": "cobrado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 89155,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "anulado"
+    },
+    {
+       "id": 6,
+       "serie": "F001",
+       "number": 694274,
+       "issue": "11",
+       "customer": "Luis",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 473388,
+       "issue": "11",
+       "customer": "Paula",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 9,
+       "serie": "0001",
+       "number": 120651,
+       "issue": "11",
+       "customer": "Juan",
+       "seller": "Steven",
+       "state": "pendiente"
+    },
+    {
+       "id": 7,
+       "serie": "B001",
+       "number": 350430,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "anulado"
+    },
+    {
+       "id": 5,
+       "serie": "0001",
+       "number": 906480,
+       "issue": "2023",
+       "customer": "Luis",
+       "seller": "Administrador",
+       "state": "cobrado"
+    }
+ ]

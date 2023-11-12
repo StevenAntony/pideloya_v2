@@ -14,11 +14,11 @@ export default function DetailTableOrder({
     isForceRenderDetail: boolean
 }) {
     return (
-        <div className="grid gap-6">
+        <div className="grid gap-6 pb-12">
             {
                 orders.map((order, index) => {
                     return <ItemOrder 
-                            key={order.id} 
+                            key={`${order.id}${index}`} 
                             order={order} 
                             index={index} 
                             updateOrderToTableOrderData={updateOrderToTableOrderData}

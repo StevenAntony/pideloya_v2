@@ -57,14 +57,15 @@ export default function ItemOrder({
             </div>
             <div>
                 <InputNumber 
-                    addonBefore={<Button onClick={subtractQuantity} className='border-0 bg-[--color-app-500] rounded-sm text-white'>-</Button>} 
-                    addonAfter={<Button onClick={addQuantity} className='border-0 bg-emerald-500 text-white rounded-sm'>+</Button>} 
+                    addonBefore={<Button disabled onClick={subtractQuantity} className='border-0 bg-[--color-app-500] rounded-sm text-white'>-</Button>} 
+                    addonAfter={<Button disabled onClick={addQuantity} className='border-0 bg-emerald-500 text-white rounded-sm'>+</Button>} 
                     value={order.quantity}
-                    className='w-32 text-center' 
+                    disabled={true}
+                    className='w-32 text-center font-bold !text-black' 
                     min={1}
                 />
 
-                <Button className='border-0 bg-[--color-app-500] rounded-sm text-white'>
+                <Button className='border-0 bg-[--color-app-500] rounded-sm text-white hidden'>
                     <DeleteOutlined className='text-xl' />
                 </Button>
             </div>

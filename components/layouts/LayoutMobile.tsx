@@ -8,7 +8,9 @@ const LayoutMobile = ({
     return (
         <div>
             <HeaderBar />
-            {children}
+            <div className='py-4'>
+                {children}
+            </div>
         </div>
     )
 }

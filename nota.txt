@@ -1,0 +1,11 @@
+Generar data
+https://www.site24x7.com/es/tools/generador-de-json.html
+["repeat[500]",{
+ "id": "int",
+   "serie": "string('B001','F001','0001')",
+   "number": "int(1000-1000000)",
+   "issue": "string('11/11/2023','12/11/2023','13/11/2023')",
+   "customer": "string('Steven', 'Juan', 'Luis', 'Eduardo', 'Paula')",
+   "seller": "string('Steven', 'Administrador')",
+   "state": "string('cobrado','pendiente','anulado')"
+}]

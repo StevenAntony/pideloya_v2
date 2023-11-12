@@ -20,6 +20,9 @@
   --color-app-800: #ae0333;
   --color-app-900: #940732;
   --color-app-950: #530016;
+
+  --text-app: #172b4d;
+  --text-app-muted:#6b778c;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -70,4 +73,8 @@ body {
 
 button .anticon svg{
   margin-top: -10px;
+}
+
+h1, h2, h3, h4, h5, p, span, label, strong{
+  color: #172b4d;
 }

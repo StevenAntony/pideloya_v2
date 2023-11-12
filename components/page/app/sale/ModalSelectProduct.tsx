@@ -71,7 +71,7 @@ const ModalSelectProduct = ({
             description: product != null ? product.description : '',
             id: 0,
             idProduct: isForm.idProduct,
-            idStore: 0,
+            idStore: 1,
             originalQuantity: isForm.quantity,
             quantity: isForm.quantity,
             note: isForm.note

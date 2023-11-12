@@ -1,5 +1,7 @@
+import NotAvailable from "@/components/NotAvailable"
+
 const DeliverySale = () => {
-    return 'delivery'
+    return <NotAvailable />
 }
 
 export default DeliverySale
