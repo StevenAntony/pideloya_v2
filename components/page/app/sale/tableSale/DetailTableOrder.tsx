@@ -1,6 +1,6 @@
 import { Button } from "antd"
 import ItemOrder from "./ItemOrder"
-import { PlusOutlined } from '@ant-design/icons'
+import { ShoppingCartOutlined, DollarOutlined } from '@ant-design/icons'
 
 export default function DetailTableOrder({
     orders,
@@ -28,10 +28,17 @@ export default function DetailTableOrder({
             }
             <div>
                 <Button
-                    className="bg-teal-500 rounded-full h-14 w-14 absolute bottom-20 right-4"
+                    className="bg-[--color-app-500] rounded-full h-14 w-14 absolute bottom-20 right-4"
                     onClick={showOpenModalSelectProduct}
                 >
-                    <PlusOutlined className="text-white text-2xl" />
+                    <ShoppingCartOutlined className="text-white text-2xl" />
+                </Button>
+
+                <Button
+                    className="bg-indigo-600 rounded-full h-14 w-14 absolute bottom-36 right-4"
+                    onClick={showOpenModalSelectProduct}
+                >
+                    <DollarOutlined className="text-white text-2xl" />
                 </Button>
             </div>
         </div>

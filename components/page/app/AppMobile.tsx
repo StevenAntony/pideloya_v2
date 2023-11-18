@@ -3,12 +3,13 @@ import { PillTabs } from "@/components/layouts/PillTabs"
 import Sale from './sale/Sale';
 import { useState } from 'react';
 import NotAvailable from '@/components/NotAvailable';
+import { Home } from './Home';
 
 const AppMobile = () =>{
   const [isTabActive, setTabActive] = useState<string>('Inicio')
 
   const pillTabs = [
-    {name:"Inicio", icon: <HomeOutlined />, component: <NotAvailable />},
+    {name:"Inicio", icon: <HomeOutlined />, component: <Home />},
     {name:"Venta", icon: <ShoppingCartOutlined />, component: <Sale />},
     {name:"Producto", icon: <InboxOutlined />, component: <NotAvailable />}, 
     {name:"Reporte", icon: <LineChartOutlined />, component: <NotAvailable />}

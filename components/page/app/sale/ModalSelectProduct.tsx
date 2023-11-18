@@ -1,3 +1,4 @@
+import FormatCurrency from "@/helpers/FormatCurrency";
 import { Button, Input, InputNumber, Modal, Select } from "antd"
 import { useEffect, useState } from "react";
 
@@ -13,8 +14,10 @@ const ModalSelectProduct = ({
     addNewOrderToTableOrderData: (c: IOrder) => void
 }) => {
     const [isOptions, setOptions] = useState<Array<any>>([])
+    const [isOptionsUnit, setOptionsUnit] = useState<Array<any>>([])
     const [isForm, setForm] = useState<IModalSelectProduct>({
         idProduct: '',
+        idPresentation: '',
         amount: 0,
         note: '',
         quantity: 1
@@ -22,11 +25,26 @@ const ModalSelectProduct = ({
 
     const onChangeProduct = (value: string) => {
         const product = isProducts.find(obj => obj.id === value)
+        const presentations = product?.presentations == undefined ? [] : product?.presentations
+        setForm(prevState => ({
+            ...prevState,
+            idProduct: value
+        }))
+        setOptionsUnit(presentations.map(obj => { return {
+            label: `${obj.unitName} : ${FormatCurrency.formatCurrency(obj.salePrice)}`,
+            value: obj.id
+        } }))
+    }
+
+    const onChangePresentation = (value: string) => {
+        const product = isProducts.find(obj => obj.id === isForm.idProduct)
+        const presentations = product?.presentations == undefined ? [] : product?.presentations
+        const presentation = presentations.find(obj => obj.id == Number(value))
 
         setForm(prevState => ({
             ...prevState,
-            idProduct: value,
-            amount: product != null ? product.price : 0
+            idPresentation: value,
+            amount: presentation ? presentation.salePrice : 0
         }))
     }
 
@@ -70,7 +88,7 @@ const ModalSelectProduct = ({
             amount: isForm.amount,
             description: product != null ? product.description : '',
             id: 0,
-            idProduct: isForm.idProduct,
+            idPresentation: isForm.idPresentation,
             idStore: 1,
             originalQuantity: isForm.quantity,
             quantity: isForm.quantity,
@@ -90,6 +108,7 @@ const ModalSelectProduct = ({
     useEffect(() => {
         setForm({
             idProduct: '',
+            idPresentation: '',
             amount: 0,
             note: '',
             quantity: 1
@@ -120,6 +139,14 @@ const ModalSelectProduct = ({
                     filterOption={filterOption}
                     options={isOptions}
                     value={isForm.idProduct == '' ? null : isForm.idProduct}
+                />
+                <Select
+                    className="w-full"
+                    placeholder="Elegir un unidad"
+                    optionFilterProp="children"
+                    onChange={onChangePresentation}
+                    options={isOptionsUnit}
+                    value={isForm.idPresentation == '' ? null : isForm.idPresentation}
                 />
                 <div className="flex flex-wrap justify-between">
                     <div >

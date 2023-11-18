@@ -2,23 +2,18 @@ import { Api } from "./Api"
 
 const list = async () => {
     let data: Array<ITable> = []
-    const response = await Api.Get(`mesa`)
+    const response = await Api.Get(`tables`)
 
-    if (response.datos) {
-        for (const key in response) {
-            if (Object.prototype.hasOwnProperty.call(response, key)) {
-                const element = response[key];
-                if (element.descripcion != undefined) {
-                    data.push({
-                        description: element.descripcion,
-                        id: element.id,
-                        nameUser: element.user,
-                        state: element.estado,
-                        time: element.tiempo
-                    })
-                }
-            }
-        }
+    if (response.success) {
+        response.data.forEach((table: any) => {
+            data.push({
+                description: table.name,
+                id: table.id,
+                nameUser: table.cashOrder ? table.cashOrder.user.name : '',
+                state: table.cashOrder ? 'Ocupado' : 'Libre',
+                time: table.cashOrder && table.cashOrder.busyTime
+            })
+        })
     }
     
     
@@ -30,35 +25,33 @@ const list = async () => {
 }
 
 const getTableOrders = async (id:number) => {
-    const response = await Api.Get(`mesa/${id}`)
+    const response = await Api.Get(`tables/${id}/orders`)
     let data: ITableOrder|null = null
+    let order: Array<IOrder> = [] 
 
-    if (response) {
-        let order: Array<IOrder> = [] 
-        if(response.datosMesa){
-            response.datosMesa.forEach((element:any) => {
-                order.push({
-                    id: element.idDM,
-                    amount: element.precio,
-                    description: element.descripcionPro,
-                    idProduct: element.idProducto,
-                    idStore: element.idAlmacen,
-                    quantity: element.cantidad,
-                    action: 'save',
-                    originalQuantity: element.cantidad
-                })
+    if(response.success){
+        const orders = response.data.orders
+        const table = response.data.table
+        orders.forEach((element:any) => {
+            order.push({
+                id: element.id,
+                amount: element.price,
+                description: element.orderDescription,
+                idPresentation: element.presentationId,
+                quantity: element.quantity,
+                action: 'save',
+                originalQuantity: element.quantity
             })
-        }
+        })
 
         data = {
-            id: response.id,
-            description: response.descripcion,
-            state: response.estado,
+            id: table.id,
+            description: table.name,
+            state: order.length === 0 ? 'Libre' : 'Ocupado' ,
             order: order
         }
     }
-    
-    
+
     return {
         success: true,
         data: data,
@@ -66,13 +59,13 @@ const getTableOrders = async (id:number) => {
     }
 }
 
-const sendOrders = async (params: IRequestSendOrder) => {
-    const response = await Api.Post(`pedido`, params)    
+const sendOrders = async (id:number, params: IRequestSendOrder) => {
+    const response = await Api.Post(`tables/${id}/orders`, params)    
     
     return {
-        success: response.registro,
+        success: response.success,
         data: null,
-        message: response.registro ? 'Registro correctamente' : 'Error al registrar'
+        message: response.success ? 'Registro correctamente' : 'Error al registrar'
     }
 }
 

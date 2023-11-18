@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react"
 import ListTableSale from "./tableSale/ListTableSale"
 import { Button, Drawer, Space } from 'antd'
-import TableService from "@/service/TableService";
-import LoadingApp from "@/components/loading/LoadingApp";
-import DetailTableOrder from "./tableSale/DetailTableOrder";
-import FormatCurrency from "@/helpers/FormatCurrency";
-import ModalSelectProduct from "./ModalSelectProduct";
-import { useAuthContext } from "@/contexts/AuthContext";
+import TableService from "@/service/TableService"
+import LoadingApp from "@/components/loading/LoadingApp"
+import DetailTableOrder from "./tableSale/DetailTableOrder"
+import FormatCurrency from "@/helpers/FormatCurrency"
+import ModalSelectProduct from "./ModalSelectProduct"
+import { useAuthContext } from "@/contexts/AuthContext"
+import { SendOutlined } from "@ant-design/icons"
 
 const TableSale = ({
     isTables,
@@ -36,8 +37,11 @@ const TableSale = ({
     }
 
     const showDrawerTableOrderInformation = async(id: number) => {
+        console.log(id);
+        
         setLoadingTableOrderData(true)
         setOpenTableOrderInformation(true)
+        setAvailableToOrder(false)
         const response = await TableService.getTableOrders(id)
         setTableOrderData(response.data)
         
@@ -74,18 +78,18 @@ const TableSale = ({
             setLoadingSendOrders(true)
             const filterSend = isTableOrderData.order.filter(obj => obj.action == 'new')
             
-            const notes = filterSend.map(obj => {return obj.note})
-            const idProducts = filterSend.map(obj => {return obj.idProduct})
-            const quantitys = filterSend.map(obj => {return obj.quantity})
-            const stores = filterSend.map(obj => {return obj.idStore})
+            const orders: Array<ISendOrder> = filterSend.map(obj => {
+                return {
+                    description: obj.description,
+                    idPresentation: obj.idPresentation,
+                    note: obj.note ?? '',
+                    price: obj.amount,
+                    quantity: obj.quantity
+                }
+            })
             
-            const response = await TableService.sendOrders({
-                almacen: stores.join(','),
-                cantidad: quantitys.join(','),
-                codigoProducto: idProducts.join(','),
-                mesa: isTableOrderData.id,
-                mozo: authTokens.user.id,
-                nota: notes.join(',')
+            const response = await TableService.sendOrders(isTableOrderData.id, {
+                orders: orders
             })
 
             if (response.success) {
@@ -128,6 +132,7 @@ const TableSale = ({
                                 disabled={!isAvailableToOrder}
                                 loading={isLoadingSendOrders}
                             >
+                                <SendOutlined />
                                 Actualizar
                             </Button>
                         </Space>

@@ -1,8 +1,11 @@
+interface ISendOrder {
+    idPresentation: string;
+    quantity: number;
+    price: number;
+    note: string,
+    description: string;
+}
+
 interface IRequestSendOrder {
-    codigoProducto: string;
-    cantidad: string;
-    nota: string;
-    almacen: string;
-    mesa: number;
-    mozo: number;
+    orders: Array<ISendOrder>
 }

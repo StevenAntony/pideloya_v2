@@ -4,8 +4,8 @@ interface IOrder {
     id: number;
     quantity: number;
     amount: number;
-    idProduct: string;
-    idStore: number;
+    idPresentation: string;
+    idStore?: number;
     description: string;
     action: TActionOrder;
     originalQuantity: number;

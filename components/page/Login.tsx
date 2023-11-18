@@ -30,18 +30,19 @@ const Login = () => {
         setLoadingLogin(true)
         const response = await AuthService.login(isForm.user, isForm.password)
         
-        if (response.acceso) {
+        if (response.success) {
+            const user = response.data.user
             messageApi.open({
                 type: 'success',
                 content: 'Acceso obtenido',
             })
             login({
-                token: response.id,
-                refresh_token: response.id,
+                token: response.data.token,
+                refresh_token: response.data.token,
                 user: {
-                    email: response.email,
-                    id: response.id,
-                    name: response.nombre
+                    email: user.email,
+                    id: user.id,
+                    name: user.name
                 }
             })
             router.push("/app")

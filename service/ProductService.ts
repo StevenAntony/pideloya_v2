@@ -1,30 +1,28 @@
 import { Api } from "./Api"
 
 const getProductForSale = async () => {
-    const response = await Api.Get(`producto`)
+    const response = await Api.Get(`products`)
     let data: Array<IProductForSale> = []
 
-    if (response.datos) {
-        for (const key in response) {
-            if (Object.prototype.hasOwnProperty.call(response, key)) {
-                const element = response[key];
-                if (element.descripcion != undefined) {
-                    data.push({
-                        description: element.descripcion,
-                        id: element.id,
-                        brand: element.marca,
-                        category:{
-                            id: element.id,
-                            description: element.descripcion
-                        },
-                        price: element.precio,
-                        unitDescription: element.unidadMedida
-                    })
-                }
-            }
-        }
+    if (response.success) {
+        response.data.forEach((element: any) => {
+            const presentations = element.presentation.split('|').map((obj: any) => {return JSON.parse(obj)} )
+            
+            data.push({
+                description: element.name,
+                id: element.id,
+                brand: element.brand,
+                category:{
+                    id: element.category,
+                    description: element.category
+                },
+                presentations: presentations.map((obj: any) => { 
+                    const { unit, salePrice , id  } = obj
+                    return {unitName: unit, salePrice, id  }
+                })
+            })
+        });
     }
-    
     
     return {
         success: true,

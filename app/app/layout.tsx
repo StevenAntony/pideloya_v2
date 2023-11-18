@@ -1,9 +1,11 @@
 'use client'
-import LayoutDesktop from "@/components/layouts/LayoutDesktop";
-import LayoutMobile from "@/components/layouts/LayoutMobile";
-import LoadingApp from "@/components/loading/LoadingApp";
-import useMobile from "@/hooks/useMobile";
-import { useEffect, useState } from "react";
+import LayoutDesktop from "@/components/layouts/LayoutDesktop"
+import LayoutMobile from "@/components/layouts/LayoutMobile"
+import LoadingApp from "@/components/loading/LoadingApp"
+import { useAuthContext } from "@/contexts/AuthContext"
+import useMobile from "@/hooks/useMobile"
+import { useEffect, useState } from "react"
+import { redirect } from 'next/navigation'
 
 export default function AppLayout({
     children
@@ -12,10 +14,12 @@ export default function AppLayout({
 }) {
   
   const [isLoading, setLoading] = useState<boolean>(true)
+  const { isLoggedIn } = useAuthContext()
 
   const { isMobile } = useMobile()  
 
   useEffect(() => {
+    if (!isLoggedIn) redirect('/')
     setLoading(false)
   }, [])
 

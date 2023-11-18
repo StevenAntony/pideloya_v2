@@ -4,7 +4,7 @@ const login = async (user: string, password: string ) => {
 
     const params = { email: user, password }
 
-    const response = await Api.Post(`acceso`, params)
+    const response = await Api.Post(`login`, params)
 
     return response
 }
