@@ -8,18 +8,29 @@ import FormatCurrency from "@/helpers/FormatCurrency"
 import ModalSelectProduct from "./ModalSelectProduct"
 import { useAuthContext } from "@/contexts/AuthContext"
 import { SendOutlined } from "@ant-design/icons"
+import ModalGenerateDocument from "./ModalGenerateDocument"
 
 const TableSale = ({
     isTables,
     showOpenModalSelectProduct,
     closeOpenModalSelectProduct,
     isOpenModalSelectProduct,
+    
+    showOpenModalGenerateDocument,
+    closeOpenModalGenerateDocument,
+    isOpenModalGenerateDocument,
+
     isProducts
 }:{
     isTables: Array<ITable>;
     showOpenModalSelectProduct: () => void;
     closeOpenModalSelectProduct: () => void;
     isOpenModalSelectProduct: boolean;
+    
+    showOpenModalGenerateDocument: () => void;
+    closeOpenModalGenerateDocument: () => void;
+    isOpenModalGenerateDocument: boolean;
+
     isProducts: Array<IProductForSale>;
 }) => {
     const [isLoadingTableOrderData, setLoadingTableOrderData] = useState<boolean>(false)
@@ -37,7 +48,6 @@ const TableSale = ({
     }
 
     const showDrawerTableOrderInformation = async(id: number) => {
-        console.log(id);
         
         setLoadingTableOrderData(true)
         setOpenTableOrderInformation(true)
@@ -160,6 +170,7 @@ const TableSale = ({
                             ) 
                             : <DetailTableOrder 
                                 showOpenModalSelectProduct={showOpenModalSelectProduct}
+                                showOpenModalGenerateDocument={showOpenModalGenerateDocument}
                                 orders={isTableOrderData != null ? isTableOrderData.order : []}
                                 updateOrderToTableOrderData={updateOrderToTableOrderData}
                                 isForceRenderDetail={isForceRenderDetail}
@@ -171,6 +182,10 @@ const TableSale = ({
                     isOpenModalSelectProduct={isOpenModalSelectProduct}
                     isProducts={isProducts}
                     addNewOrderToTableOrderData={addNewOrderToTableOrderData}
+                />
+                <ModalGenerateDocument
+                    closeOpenModal={closeOpenModalGenerateDocument}
+                    isOpenModal={isOpenModalGenerateDocument}
                 />
             </div>
         </div>

@@ -1,16 +1,22 @@
 'use client'
 import { Tabs } from 'antd'
-import OrdinarySale from './OrdinarySale';
-import TableSale from './TableSale';
+import OrdinarySale from './OrdinarySale'
+import TableSale from './TableSale'
 import DeliverySale from './DeliverySale'
-import { useEffect, useState } from 'react';
-import TableService from '@/service/TableService';
-import ProductService from '@/service/ProductService';
+import { useContext, useEffect, useState } from 'react'
+import TableService from '@/service/TableService'
+import ProductService from '@/service/ProductService'
+import SaleService from '@/service/SaleService'
+import { useSaleContext } from '@/contexts/SaleContext'
+import CustomerService from '@/service/CustomerService'
 
 const Sale = () => {
     const [isTables, setTables] = useState<Array<ITable>>([])
     const [isProducts, setProducts] = useState<Array<IProductForSale>>([])
     const [isOpenModalSelectProduct, setOpenModalSelectProduct] = useState<boolean>(false)
+    const [isOpenModalGenerateDocument, setOpenModalGenerateDocument] = useState<boolean>(false)
+
+    const { setSaleContext } = useSaleContext()
 
     const getTables =async () => {
         const response =await TableService.list()
@@ -28,12 +34,31 @@ const Sale = () => {
         }
     }
 
+    const getInformation =async () => {
+        const response = await SaleService.getInformationForSale();
+        
+        if (response.success) {
+            setSaleContext({
+                products: [],
+                information: response.data
+            })
+        }
+    }
+
     const showOpenModalSelectProduct = () => {
         setOpenModalSelectProduct(true)
     }
 
     const closeOpenModalSelectProduct = () => {
         setOpenModalSelectProduct(false)
+    }
+
+    const showOpenModalGenerateDocument = () => {
+        setOpenModalGenerateDocument(true)
+    }
+
+    const closeOpenModalGenerateDocument = () => {
+        setOpenModalGenerateDocument(false)
     }
 
     const typeSale = [
@@ -49,6 +74,9 @@ const Sale = () => {
                 showOpenModalSelectProduct={showOpenModalSelectProduct}
                 closeOpenModalSelectProduct={closeOpenModalSelectProduct}
                 isOpenModalSelectProduct={isOpenModalSelectProduct}
+                isOpenModalGenerateDocument={isOpenModalGenerateDocument}
+                showOpenModalGenerateDocument={showOpenModalGenerateDocument}
+                closeOpenModalGenerateDocument={closeOpenModalGenerateDocument}
                 isTables={isTables}
                 isProducts={isProducts}
             />
@@ -61,12 +89,13 @@ const Sale = () => {
     ]
 
     const onChange = (key: string) => {
-        console.log(key)
+        
     }
 
     useEffect(() => {
         getTables()
         getProducts()
+        getInformation()
         return () => {
         }
     }, [])

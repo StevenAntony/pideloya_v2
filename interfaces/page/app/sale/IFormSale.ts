@@ -5,3 +5,7 @@ interface IModalSelectProduct {
     amount: number;
     note: string;
 }
+
+interface IModalGenerateDocument {
+    
+}

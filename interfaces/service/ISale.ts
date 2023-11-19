@@ -28,3 +28,8 @@ interface ISale {
     seller: string,
     state: string;
 }
+
+interface IInformation {
+    vouchersSeries: Array<IVoucher>,
+    paymentMethods: Array<IPaymentMethods>
+}

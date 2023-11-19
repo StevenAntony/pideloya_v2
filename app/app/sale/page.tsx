@@ -1,4 +1,4 @@
-import Sale from '@/components/page/app/sale/Sale';
+import Sale from '@/components/page/app/sale/Sale'
 
 const SalePage = () => {
     return (

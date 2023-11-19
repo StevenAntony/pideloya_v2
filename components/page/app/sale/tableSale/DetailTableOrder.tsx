@@ -5,11 +5,13 @@ import { ShoppingCartOutlined, DollarOutlined } from '@ant-design/icons'
 export default function DetailTableOrder({
     orders,
     showOpenModalSelectProduct,
+    showOpenModalGenerateDocument,
     updateOrderToTableOrderData,
     isForceRenderDetail
 }:{
     orders: Array<IOrder>;
     showOpenModalSelectProduct: () => void;
+    showOpenModalGenerateDocument: () => void;
     updateOrderToTableOrderData: (o: IOrder, i: number) => void;
     isForceRenderDetail: boolean
 }) {
@@ -36,7 +38,7 @@ export default function DetailTableOrder({
 
                 <Button
                     className="bg-indigo-600 rounded-full h-14 w-14 absolute bottom-36 right-4"
-                    onClick={showOpenModalSelectProduct}
+                    onClick={showOpenModalGenerateDocument}
                 >
                     <DollarOutlined className="text-white text-2xl" />
                 </Button>

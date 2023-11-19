@@ -135,7 +135,6 @@ const ModalSelectProduct = ({
                     placeholder="Elegir un producto"
                     optionFilterProp="children"
                     onChange={onChangeProduct}
-                    onSearch={() => {}}
                     filterOption={filterOption}
                     options={isOptions}
                     value={isForm.idProduct == '' ? null : isForm.idProduct}

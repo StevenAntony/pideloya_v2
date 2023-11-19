@@ -50,8 +50,6 @@ export default function AuthContextProvider({
   )
 
   const login = useCallback(function (authTokens: AuthTokens) {
-    console.log(AUTH_TOKENS_KEY);
-    
     window.localStorage.setItem(AUTH_TOKENS_KEY, JSON.stringify(authTokens))
     setAuthTokens(authTokens);
   }, [])

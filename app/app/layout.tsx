@@ -6,6 +6,7 @@ import { useAuthContext } from "@/contexts/AuthContext"
 import useMobile from "@/hooks/useMobile"
 import { useEffect, useState } from "react"
 import { redirect } from 'next/navigation'
+import SaleContextProvider from "@/contexts/SaleContext"
 
 export default function AppLayout({
     children
@@ -36,8 +37,10 @@ export default function AppLayout({
   )
 
   return (
-    <div className='bg-white h-screen'>
-      { isMobile ? <LayoutMobile>{children}</LayoutMobile> : <LayoutDesktop>{children}</LayoutDesktop> }
-    </div>
+    <SaleContextProvider>
+      <div className='bg-white h-screen'>
+        { isMobile ? <LayoutMobile>{children}</LayoutMobile> : <LayoutDesktop>{children}</LayoutDesktop> }
+      </div>
+    </SaleContextProvider>
   )
 }  
