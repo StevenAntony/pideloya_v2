@@ -37,7 +37,7 @@ const getTableOrders = async (id:number) => {
                 id: element.id,
                 amount: element.price,
                 description: element.orderDescription,
-                idPresentation: element.presentationId,
+                idPresentation: element.idPresentation,
                 quantity: element.quantity,
                 action: 'save',
                 originalQuantity: element.quantity

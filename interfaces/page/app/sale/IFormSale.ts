@@ -7,5 +7,8 @@ interface IModalSelectProduct {
 }
 
 interface IModalGenerateDocument {
-    
+    seriesID : string|null;
+    customerID: string|null;
+    paymentMethodID: string|null;
+    amountPayment: number;
 }

@@ -4,6 +4,7 @@ import React, { ReactNode, createContext, useContext, useState } from "react";
 interface ISaleContext {
   products: Array<IProductForSale>;
   information: IInformation;
+  detailsSale?: Array<IDetail>;
 }
 
 const initSaleContext = {
@@ -12,6 +13,7 @@ const initSaleContext = {
     paymentMethods: [],
     vouchersSeries: [],
   },
+  detailsSale: []
 };
 
 export const SaleContext = createContext<{

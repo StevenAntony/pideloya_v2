@@ -18,8 +18,19 @@ const getInformationForSale = async () => {
     }
 }
 
+const getSaveSale = async (params: IRequestSale) => {
+    const response = await Api.Post(`sales`, params)
+
+    return {
+        success: response.success,
+        data: null,
+        message: response.message
+    }
+}
+
 const SaleService = {
-    getInformationForSale
+    getInformationForSale,
+    getSaveSale
 }
 
 export default SaleService

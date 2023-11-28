@@ -9,6 +9,7 @@ import ModalSelectProduct from "./ModalSelectProduct"
 import { useAuthContext } from "@/contexts/AuthContext"
 import { SendOutlined } from "@ant-design/icons"
 import ModalGenerateDocument from "./ModalGenerateDocument"
+import { useSaleContext } from "@/contexts/SaleContext"
 
 const TableSale = ({
     isTables,
@@ -41,7 +42,7 @@ const TableSale = ({
     const [isForceRenderDetail, setForceRenderDetail] = useState<boolean>(false)
     const [isAvailableToOrder, setAvailableToOrder] = useState<boolean>(false)
 
-    const { authTokens } = useAuthContext()
+    const { setSaleContext, isSaleContext } = useSaleContext()
     
     const onCloseTableOrderInformation = () => {
         setOpenTableOrderInformation(false)
@@ -54,7 +55,21 @@ const TableSale = ({
         setAvailableToOrder(false)
         const response = await TableService.getTableOrders(id)
         setTableOrderData(response.data)
-        
+
+        setSaleContext({
+            ...isSaleContext,
+            detailsSale: response.data 
+                            ? response.data.order.map(obj => {
+                                return {
+                                    note: obj.note ?? '',
+                                    orderDescription: obj.description,
+                                    presentationID: obj.idPresentation,
+                                    price: obj.amount,
+                                    quantity: obj.quantity
+                                }
+                            })
+                            : []
+        }) 
         setLoadingTableOrderData(false)
     }
 
@@ -186,6 +201,7 @@ const TableSale = ({
                 <ModalGenerateDocument
                     closeOpenModal={closeOpenModalGenerateDocument}
                     isOpenModal={isOpenModalGenerateDocument}
+                    totalAmount={totalAmount(isTableOrderData != null ? isTableOrderData.order : [])}
                 />
             </div>
         </div>
