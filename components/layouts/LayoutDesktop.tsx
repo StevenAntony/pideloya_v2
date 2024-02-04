@@ -1,17 +1,73 @@
-import { useState } from "react"
+'use client'
+import { useEffect, useState } from "react"
 import { MagicMotion } from "react-magic-motion"
-import { ArrowLeftOutlined, ArrowRightOutlined, LayoutOutlined } from '@ant-design/icons'
-import type { CollapseProps } from 'antd'
-import { Collapse, theme } from 'antd'
+import { ArrowLeftOutlined, ArrowRightOutlined, LayoutOutlined, AppstoreOutlined } from '@ant-design/icons'
+import type { CollapseProps, MenuProps } from 'antd'
+import { Collapse, theme, Menu } from 'antd'
 import data from "@/service/data/Access.json"
 import Link from "next/link"
+import { usePathname } from 'next/navigation'
 
-export default function Layout({
+type MenuItem = Required<MenuProps>['items'][number];
+
+function getItem(
+  label: React.ReactNode,
+  key: React.Key,
+  icon?: React.ReactNode,
+  children?: MenuItem[],
+  type?: 'group',
+): MenuItem {
+  return {
+    key,
+    icon,
+    children,
+    label,
+    type,
+  } as MenuItem;
+}
+
+export default function LayoutDesktop({
     children
 }: {
     children: React.ReactNode
 }) {
     const [isCollapsed, setIsCollapsed] = useState(false)
+    const [isMenus, setMenus] = useState<MenuProps['items']>([])
+    const [isOptionActive, setOptionActive] = useState<string>('2')
+
+    const pathname  = usePathname()
+
+    const buildMenus = () => {
+        const draftMenus:MenuProps['items'] = []
+        
+        data.forEach(element => {
+            if (element.children != undefined) {
+                const draftMenusChildren:MenuProps['items'] = []
+                element.children.forEach(obj => {
+                    draftMenusChildren.push(
+                        getItem(
+                            <a href={obj.url} rel="noopener noreferrer">
+                                {obj.name}
+                            </a>, obj.id, null
+                        )
+                    )
+                })
+                draftMenus.push(
+                    getItem(element.name, element.id, <AppstoreOutlined />, draftMenusChildren)
+                )
+            }else{
+                draftMenus.push( 
+                    getItem(
+                        <a href={element.url} rel="noopener noreferrer">
+                            {element.name}
+                        </a>, element.id, <AppstoreOutlined />
+                    )
+                )
+            }
+        })
+
+        setMenus(draftMenus)
+    }
     
     const buildOption = (element: any) => {
 
@@ -34,6 +90,10 @@ export default function Layout({
                     items={items}
                 />
     }
+
+    useEffect(() => {
+        buildMenus()
+    }, [])
 
     function contentOption (obj: any) {
         return (
@@ -61,46 +121,36 @@ export default function Layout({
 
     return (
         <div className="flex flex-wrap h-full ">
-            <div className="transition-all duration-500" style={{ width: isCollapsed ? "3.4rem" : "15rem" }}>
-                    <aside
-                        className="bg-[--color-app-500] transition-all duration-500 h-screen fixed p-4 flex flex-col gap-4 overflow-hidden z-10 shadow-lg"
-                        style={{ width: isCollapsed ? "3.4rem" : "15rem" }}
-                    >
-                        <div className="flex gap-2 items-center justify-between">
-                            {!isCollapsed && <h4 className="m-0 text-white">{process.env.NODE_ENV}</h4>}
-                            <button className="cursor-pointer p-0 border-0"
-                                onClick={() => setIsCollapsed(!isCollapsed)}
-                            >
-                                {
-                                    isCollapsed
-                                        ? <ArrowRightOutlined className="text-white text-2xl" />
-                                        : <ArrowLeftOutlined className="text-2xl text-white" />
-                                }
-                            </button>
-                        </div>
-
-                        <ul className={`flex flex-col gap-4 m-0 p-0 ${isCollapsed ? 'hidden' : ''}`}>
+            <div className="transition-all duration-500" style={{ width: isCollapsed ? "4.5rem" : "15rem"}}>
+                <aside
+                    className="bg-[--color-app-500] transition-all duration-500 h-screen fixed p-4 flex flex-col gap-4 overflow-hidden z-10 shadow-lg"
+                    style={{ width: isCollapsed ? "4.5rem" : "15rem"}}
+                >
+                    
+                    <div className="flex gap-2 items-center justify-between">
+                        {!isCollapsed && <h4 className="m-0 text-white">{process.env.NEXT_PUBLIC_APP_NAME}</h4>}
+                        <button className="cursor-pointer p-0 border-0"
+                            onClick={() => setIsCollapsed(!isCollapsed)}
+                        >
                             {
-                                data.map(obj => {
-
-                                    return (
-                                        <li className="flex gap-4 items-center w-full" key={obj.id}>
-                                            {
-                                                obj.children != undefined
-                                                ? buildOption(obj)
-                                                : (
-                                                    <Link href={obj.url} className="w-full">
-                                                        <LayoutOutlined className="text-white text-2xl" />
-                                                        <span className="text-white ml-2">{obj.name}</span>
-                                                    </Link>
-                                                )
-                                            }
-                                        </li>
-                                    )
-                                })
+                                isCollapsed
+                                    ? <ArrowRightOutlined className="text-white text-2xl" />
+                                    : <ArrowLeftOutlined className="text-2xl text-white" />
                             }
-                        </ul>
-                    </aside>
+                        </button>
+                    </div>
+                    <Menu
+                        onClick={() => {}}
+                        className="bg-transparent"
+                        style={{ width: isCollapsed ? "3rem" : "15rem" }}
+                        defaultSelectedKeys={[isOptionActive]}
+                        //defaultOpenKeys={['sub1']}
+                        mode="inline"
+                        inlineCollapsed={isCollapsed}
+                        items={isMenus}
+                    />
+                    
+                </aside>
             </div>
             <div className="flex-1 transition-all duration-1000">
                 {children}

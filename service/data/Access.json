@@ -20,7 +20,7 @@
     {
         "id": 3,
         "name": "Venta",
-        "url" : "/app/cash",
+        "url" : "",
         "icon": "",
         "children": [{
             "id": 33,

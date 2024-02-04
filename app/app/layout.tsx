@@ -24,11 +24,11 @@ export default function AppLayout({
     setLoading(false)
   }, [])
 
-  if (!isMobile) return (
-    <div className='bg-white h-screen'>
-      <LoadingApp />
-    </div>
-  )
+  // if (!isMobile) return (
+  //   <div className='bg-white h-screen'>
+  //     <LoadingApp />
+  //   </div>
+  // )
 
   if(isLoading) return (
     <div className='bg-white h-screen'>

@@ -6,21 +6,23 @@ const getProductForSale = async () => {
 
     if (response.success) {
         response.data.forEach((element: any) => {
-            const presentations = element.presentation.split('|').map((obj: any) => {return JSON.parse(obj)} )
-            
-            data.push({
-                description: element.name,
-                id: element.id,
-                brand: element.brand,
-                category:{
-                    id: element.category,
-                    description: element.category
-                },
-                presentations: presentations.map((obj: any) => { 
-                    const { unit, salePrice , id  } = obj
-                    return {unitName: unit, salePrice, id  }
+            if (element.presentation) {
+                const presentations = element.presentation.split('|').map((obj: any) => {return JSON.parse(obj)} )
+                
+                data.push({
+                    description: element.name,
+                    id: element.id,
+                    brand: element.brand,
+                    category:{
+                        id: element.category,
+                        description: element.category
+                    },
+                    presentations: presentations.map((obj: any) => { 
+                        const { unit, salePrice , id  } = obj
+                        return {unitName: unit, salePrice, id  }
+                    })
                 })
-            })
+            }
         });
     }
     
