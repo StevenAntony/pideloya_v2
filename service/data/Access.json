@@ -28,5 +28,17 @@
             "url" : "/app/sale",
             "icon": ""
         }]
+    },
+    {
+        "id": 4,
+        "name": "Mantenedor",
+        "url" : "",
+        "icon": "",
+        "children": [{
+            "id": 41,
+            "name": "Producto",
+            "url" : "/app/product",
+            "icon": ""
+        }]
     }
 ]

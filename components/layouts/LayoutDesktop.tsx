@@ -33,7 +33,7 @@ export default function LayoutDesktop({
 }) {
     const [isCollapsed, setIsCollapsed] = useState(false)
     const [isMenus, setMenus] = useState<MenuProps['items']>([])
-    const [isOptionActive, setOptionActive] = useState<string>('2')
+    const [isOptionActive, setOptionActive] = useState<string>('41')
 
     const pathname  = usePathname()
 
@@ -121,13 +121,13 @@ export default function LayoutDesktop({
 
     return (
         <div className="flex flex-wrap h-full ">
-            <div className="transition-all duration-500" style={{ width: isCollapsed ? "4.5rem" : "15rem"}}>
+            <div className="transition-all duration-500" style={{ width: isCollapsed ? "3rem" : "15rem"}}>
                 <aside
-                    className="bg-[--color-app-500] transition-all duration-500 h-screen fixed p-4 flex flex-col gap-4 overflow-hidden z-10 shadow-lg"
-                    style={{ width: isCollapsed ? "4.5rem" : "15rem"}}
+                    className="bg-[--color-app-500] transition-all duration-500 h-screen fixed py-4 border border-[--color-app-500] flex flex-col gap-4 overflow-hidden z-10 shadow-lg"
+                    style={{ width: isCollapsed ? "3rem" : "15rem"}}
                 >
                     
-                    <div className="flex gap-2 items-center justify-between">
+                    <div className="flex gap-2 items-center justify-between px-4">
                         {!isCollapsed && <h4 className="m-0 text-white">{process.env.NEXT_PUBLIC_APP_NAME}</h4>}
                         <button className="cursor-pointer p-0 border-0"
                             onClick={() => setIsCollapsed(!isCollapsed)}
@@ -141,11 +141,11 @@ export default function LayoutDesktop({
                     </div>
                     <Menu
                         onClick={() => {}}
-                        className="bg-transparent"
                         style={{ width: isCollapsed ? "3rem" : "15rem" }}
-                        defaultSelectedKeys={[isOptionActive]}
-                        //defaultOpenKeys={['sub1']}
+                        defaultSelectedKeys={[isOptionActive,'4']}
+                        defaultOpenKeys={['4']}
                         mode="inline"
+                        theme="light"
                         inlineCollapsed={isCollapsed}
                         items={isMenus}
                     />
