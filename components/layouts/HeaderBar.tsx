@@ -14,13 +14,53 @@ import logo from '@/public/icon-192x192.png'
 import onda from '@/public/image/onda.svg'
 import user from '@/public/image/man.png'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Divider } from 'antd'
+import { Divider, Dropdown } from 'antd'
+import type { MenuProps } from 'antd'
+import { useSaleContext } from '@/contexts/SaleContext'
+import useStorage from '@/hooks/useStorage'
 
 const HeaderBar = () => {
     const [isActivePanelOption, setActivePanelOption] = useState<boolean>(false)
+    const [isCashsItems, setCashsItems] = useState<MenuProps['items']>([])
+    const [isCashCurrent, setCashCurrent] = useState<ICash>()
+
     const { authTokens } = useAuthContext()
+    const { isSaleContext } = useSaleContext()
+    const { getItem, setItem } = useStorage()
+
+    const handleMenuClick: MenuProps['onClick'] = (e) => {
+        const cashCompany = isSaleContext.information.cashCompany
+        setItem('CASH_COMPANY', Number(e.key))
+        setCashCurrent(cashCompany.find(c => Number(c.id) === Number(e.key)))
+    }
+
+    useEffect(() => {
+        const cashCompany = isSaleContext.information.cashCompany
+        if (cashCompany.length > 0) {
+            let cashCurrent = getItem('CASH_COMPANY')
+            if (cashCurrent) {
+                if (!cashCompany.find(c => c.id === cashCurrent)) { 
+                    cashCurrent = cashCompany[0].id
+                    setItem('CASH_COMPANY', cashCompany[0].id)
+                }
+            }else{
+                cashCurrent = cashCompany[0].id
+                setItem('CASH_COMPANY', cashCompany[0].id)
+            }
+
+            setCashCurrent(cashCompany.find(c => c.id === cashCurrent))
+        }
+
+        setCashsItems(cashCompany.map( cash => {
+            return {
+                key: cash.id,
+                label: cash.openingDate
+            }
+        }))
+
+    }, [isSaleContext])
 
     return (
         <>
@@ -30,8 +70,15 @@ const HeaderBar = () => {
                 >
                     <AlignLeftOutlined style={{ fontSize: '26px' }} />
                 </button>
-                <div>
-                    {authTokens.user.name}
+                <div className='text-center'>
+                    <div>
+                        <strong className='text-sm'>Caja Actual</strong>
+                    </div>
+                    <Dropdown menu={{ items:isCashsItems, onClick: handleMenuClick }}>
+                        <a className='text-sm' onClick={(e) => e.preventDefault()}>
+                            {isCashCurrent?.openingDate}
+                        </a>
+                    </Dropdown>
                 </div>
                 <div>
                     <Image

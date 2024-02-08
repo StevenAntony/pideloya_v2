@@ -38,6 +38,7 @@ const TableSale = ({
     const [isLoadingSendOrders, setLoadingSendOrders] = useState<boolean>(false)
 
     const [isTableOrderData, setTableOrderData] = useState<ITableOrder|null>(null)
+    const [isTableSelected, setTableSelected] = useState<number>(0)
     const [isOpenTableOrderInformation, setOpenTableOrderInformation] = useState<boolean>(false)
     const [isForceRenderDetail, setForceRenderDetail] = useState<boolean>(false)
     const [isAvailableToOrder, setAvailableToOrder] = useState<boolean>(false)
@@ -55,7 +56,7 @@ const TableSale = ({
         setAvailableToOrder(false)
         const response = await TableService.getTableOrders(id)
         setTableOrderData(response.data)
-
+        setTableSelected(id)
         setSaleContext({
             ...isSaleContext,
             detailsSale: response.data 
@@ -202,6 +203,7 @@ const TableSale = ({
                     closeOpenModal={closeOpenModalGenerateDocument}
                     isOpenModal={isOpenModalGenerateDocument}
                     totalAmount={totalAmount(isTableOrderData != null ? isTableOrderData.order : [])}
+                    isTableSelected={isTableSelected}
                 />
             </div>
         </div>

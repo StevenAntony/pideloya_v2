@@ -29,7 +29,13 @@ interface ISale {
     state: string;
 }
 
+interface ICash {
+    id: string;
+    openingDate: string;
+}
+
 interface IInformation {
     vouchersSeries: Array<IVoucher>,
-    paymentMethods: Array<IPaymentMethods>
+    paymentMethods: Array<IPaymentMethods>,
+    cashCompany: Array<ICash>
 }

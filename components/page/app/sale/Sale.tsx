@@ -3,20 +3,15 @@ import { Tabs } from 'antd'
 import OrdinarySale from './OrdinarySale'
 import TableSale from './TableSale'
 import DeliverySale from './DeliverySale'
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import TableService from '@/service/TableService'
 import ProductService from '@/service/ProductService'
-import SaleService from '@/service/SaleService'
-import { useSaleContext } from '@/contexts/SaleContext'
-import CustomerService from '@/service/CustomerService'
 
 const Sale = () => {
     const [isTables, setTables] = useState<Array<ITable>>([])
     const [isProducts, setProducts] = useState<Array<IProductForSale>>([])
     const [isOpenModalSelectProduct, setOpenModalSelectProduct] = useState<boolean>(false)
     const [isOpenModalGenerateDocument, setOpenModalGenerateDocument] = useState<boolean>(false)
-
-    const { setSaleContext } = useSaleContext()
 
     const getTables =async () => {
         const response =await TableService.list()
@@ -31,17 +26,6 @@ const Sale = () => {
 
         if (response.success) {
             setProducts(response.data)
-        }
-    }
-
-    const getInformation =async () => {
-        const response = await SaleService.getInformationForSale();
-        
-        if (response.success) {
-            setSaleContext({
-                products: [],
-                information: response.data
-            })
         }
     }
 
@@ -95,7 +79,6 @@ const Sale = () => {
     useEffect(() => {
         getTables()
         getProducts()
-        getInformation()
         return () => {
         }
     }, [])

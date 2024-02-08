@@ -1,5 +1,6 @@
 import { useSaleContext } from "@/contexts/SaleContext"
 import FormatCurrency from "@/helpers/FormatCurrency"
+import useStorage from "@/hooks/useStorage"
 import CustomerService from "@/service/CustomerService"
 import SaleService from "@/service/SaleService"
 import { Button, InputNumber, Modal, Select, message } from "antd"
@@ -15,11 +16,13 @@ const INIT_FORM = {
 const ModalGenerateDocument = ({
     closeOpenModal,
     isOpenModal,
-    totalAmount
+    totalAmount,
+    isTableSelected
 }:{
     closeOpenModal: () => void;
     isOpenModal: boolean;
     totalAmount: number;
+    isTableSelected: number;
 }) => {
 
     const [ isCustomers, setCustomers ] = useState<Array<ICustomer>>([])
@@ -29,6 +32,7 @@ const ModalGenerateDocument = ({
 
     const [ messageApi, contextHolder ] = message.useMessage()
     const { isSaleContext } = useSaleContext()
+    const { getItem } = useStorage()
 
     
     const getCustomersForSale = async (search: string) => {
@@ -55,16 +59,28 @@ const ModalGenerateDocument = ({
 
     const handleSendSaveSale =async () => {
         setLoadingSendSale(true)
-        const response =await SaleService.getSaveSale({
+        
+        if (!isForm.paymentMethodID) {
+            messageApi.warning('Revise formulario')
+            setLoadingSendSale(false)
+            return false
+        }
+        const response =await SaleService.saveSale({
             sale: {
-                cashID: '1',
+                cashID: getItem('CASH_COMPANY'),
                 customerID: isForm.customerID ?? '',
                 seriesID: isForm.seriesID ?? '',
-                tableID : '1', 
+                tableID : `${isTableSelected}` , 
                 type: 'Table',
                 issue: null
             },
-            detail: isSaleContext.detailsSale ?? []
+            detail: isSaleContext.detailsSale ?? [],
+            payments: [
+                {
+                    amount: isForm.amountPayment,
+                    paymentMethodID: isForm.paymentMethodID
+                }
+            ]
         })
 
         if (response.success) {

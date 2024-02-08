@@ -13,6 +13,7 @@ interface IRequestSendOrder {
 interface IRequestSale {
     sale: ISaleCreate;
     detail: IDetail[];
+    payments: IPayment[];
 }
   
 interface ISaleCreate {
@@ -32,3 +33,13 @@ interface IDetail {
     price: number;
 }
   
+interface IPayment {
+    amount: number;
+    paymentMethodID: string;
+}
+
+interface IRequestList {
+    filter: {
+        type: string;
+    };
+}

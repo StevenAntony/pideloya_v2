@@ -15,10 +15,13 @@ const Header = (): HeadersInit => {
     return myHeaders
 }
 
-const Get = async (url: string) => {
+const Get = async (url: string, body?: null|any|undefined) => {
+    const raw = JSON.stringify(body)
+
     const requestOptions: RequestInit = {
         method: 'GET',
-        headers: Header()
+        headers: Header(),
+        body: raw
     }
     const response = await fetch(`${Url.API_V1}/${url}`, requestOptions)
     return response.json()

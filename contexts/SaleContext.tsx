@@ -12,6 +12,7 @@ const initSaleContext = {
   information: {
     paymentMethods: [],
     vouchersSeries: [],
+    cashCompany: []
   },
   detailsSale: []
 };

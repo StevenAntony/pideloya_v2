@@ -4,7 +4,8 @@ const getInformationForSale = async () => {
     const response = await Api.Get(`information/sale`)
     let data: IInformation = {
         paymentMethods: [],
-        vouchersSeries: []
+        vouchersSeries: [],
+        cashCompany: []
     }
 
     if (response.success) {
@@ -18,8 +19,18 @@ const getInformationForSale = async () => {
     }
 }
 
-const getSaveSale = async (params: IRequestSale) => {
+const saveSale = async (params: IRequestSale) => {
     const response = await Api.Post(`sales`, params)
+
+    return {
+        success: response.success,
+        data: null,
+        message: response.message
+    }
+}
+
+const list = async (params: IRequestList) => {
+    const response = await Api.Get(`sales`, params)
 
     return {
         success: response.success,
@@ -30,7 +41,7 @@ const getSaveSale = async (params: IRequestSale) => {
 
 const SaleService = {
     getInformationForSale,
-    getSaveSale
+    saveSale
 }
 
 export default SaleService
