@@ -3,7 +3,7 @@ import FormatCurrency from "@/helpers/FormatCurrency"
 import useStorage from "@/hooks/useStorage"
 import CustomerService from "@/service/CustomerService"
 import SaleService from "@/service/SaleService"
-import { Button, InputNumber, Modal, Select, message } from "antd"
+import { Button, Divider, InputNumber, Modal, Select, message } from "antd"
 import { useEffect, useState } from "react"
 
 const INIT_FORM = {
@@ -29,6 +29,7 @@ const ModalGenerateDocument = ({
     const [ isLoadingSearch, setLoadingSearch ] = useState<boolean>(false)
     const [ isLoadingSendSale, setLoadingSendSale ] = useState<boolean>(false)
     const [ isForm, setForm ] = useState<IModalGenerateDocument>(INIT_FORM)
+    const [ isPayments, setPayments ] = useState<any[]>([])
 
     const [ messageApi, contextHolder ] = message.useMessage()
     const { isSaleContext } = useSaleContext()
@@ -74,6 +75,7 @@ const ModalGenerateDocument = ({
                 type: 'Table',
                 issue: null
             },
+            
             detail: isSaleContext.detailsSale ?? [],
             payments: [
                 {
@@ -93,6 +95,18 @@ const ModalGenerateDocument = ({
         setLoadingSendSale(false)
     }
 
+    const handleAddPaymentToSale = () => {
+        const totalAmount = isPayments.reduce(function(total, payment) {
+            return total + payment.amount
+            }, 0)
+
+        isPayments.push({
+            paymentMethodID: isForm.paymentMethodID,
+            amount: isForm.amountPayment
+        })
+        setPayments(isPayments)
+    }
+
     useEffect(() => {
         setForm({
             ...isForm,
@@ -106,20 +120,24 @@ const ModalGenerateDocument = ({
             <Modal
                 open={isOpenModal}
                 onCancel={closeOpenModal}
+                centered={false}
                 maskClosable={false}
                 footer={
-                    <div className="flex justify-between items-center">
-                        <p className="font-bold text-[#172b4d] text-xl">{FormatCurrency.formatCurrency(totalAmount)}</p>
-                        <Button 
-                            onClick={handleSendSaveSale}
-                            loading={isLoadingSendSale}
-                            className="bg-blue-600 !text-white">
-                            Guardar Venta
-                        </Button>
-                    </div>
+                    <>
+                        <Divider />
+                        <div className="flex justify-between items-center">
+                            <p className="font-bold text-[#172b4d] text-xl">{FormatCurrency.formatCurrency(totalAmount)}</p>
+                            <Button 
+                                onClick={handleSendSaveSale}
+                                loading={isLoadingSendSale}
+                                className="bg-blue-600 !text-white">
+                                Guardar Venta
+                            </Button>
+                        </div>
+                    </>
                 }
             >
-                <div className="w-full py-10 modal-select-product grid gap-4">
+                <div className="w-full pt-10 modal-select-product grid gap-4">
 
                     <Select
                         className="w-full"
@@ -161,25 +179,30 @@ const ModalGenerateDocument = ({
                         })}
                         value={isForm.customerID == '' ? null : isForm.customerID}
                     />
-                    <Select
-                        className="w-full"
-                        placeholder="Elegir medio de pago"
-                        onChange={(value: string) => setForm({
-                            ...isForm,
-                            paymentMethodID: value
-                        })}
-                        options={isSaleContext.information.paymentMethods.map(obj => {
-                            return {
-                                value: obj.id,
-                                label: obj.name
-                            }
-                        })}
-                        value={isForm.paymentMethodID}
-                    />
-                    <div className="flex flex-wrap justify-between items-center">
+                </div>
+                <Divider orientation="left" orientationMargin="0">Pagos</Divider>
+                <div>
+                    <div className="flex flex-wrap gap-y-4 justify-between items-center">
+                        <div className="w-full">
+                            <Select
+                                className="w-full"
+                                placeholder="Elegir medio de pago"
+                                onChange={(value: string) => setForm({
+                                    ...isForm,
+                                    paymentMethodID: value
+                                })}
+                                options={isSaleContext.information.paymentMethods.map(obj => {
+                                    return {
+                                        value: obj.id,
+                                        label: obj.name
+                                    }
+                                })}
+                                value={isForm.paymentMethodID}
+                            />
+                        </div>
                         <div className="w-6/12" >
                             <InputNumber 
-                                addonBefore={<span className="px-3">S/</span>}
+                                addonBefore={<span className="px-1">S/</span>}
                                 value={isForm.amountPayment}                    
                                 onChange={(value: number|null) => setForm({
                                     ...isForm,
@@ -187,15 +210,25 @@ const ModalGenerateDocument = ({
                                 })}
                             />
                         </div>
+                        <div className="w-6/12">
+                            <Button 
+                                onClick={handleAddPaymentToSale}
+                                className="bg-cyan-600 !text-white w-full">
+                                Agregar Pago
+                            </Button>
+                        </div>
                         <div>
-                            <div className={`
-                                ${isForm.amountPayment - totalAmount < 0 ? 'bg-red-600' : (
-                                    isForm.amountPayment - totalAmount == 0 ? 'bg-slate-400' :  'bg-emerald-600'
-                                )}
-                                px-4 py-1 rounded text-white font-bold
-                            `}>
-                                {FormatCurrency.formatCurrency(isForm.amountPayment - totalAmount)}
-                            </div>
+                            {
+                                isPayments.map(obj => 'a')
+                            }
+                        </div>
+                        <div className={`
+                            ${isForm.amountPayment - totalAmount < 0 ? 'bg-red-600' : (
+                                isForm.amountPayment - totalAmount == 0 ? 'bg-slate-400' :  'bg-emerald-600'
+                            )}
+                            px-4 py-1 w-full  rounded text-white font-bold flex justify-between
+                        `}>
+                            <span>Vuelto:</span> <span>{FormatCurrency.formatCurrency(isForm.amountPayment - totalAmount)}</span>
                         </div>
                     </div>
                 </div>
