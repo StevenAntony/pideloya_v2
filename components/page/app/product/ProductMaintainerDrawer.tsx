@@ -1,40 +1,90 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import { Drawer, Space, Form, Input, Row, Select, Button, Col, DatePicker, Switch } from 'antd'
-import type { TableProps, MenuProps } from 'antd'
-import { EditOutlined, DollarOutlined, ApartmentOutlined, EllipsisOutlined, SyncOutlined } from '@ant-design/icons'
+import { Drawer, Space, message, Input, Row, Select, Button, Col, Switch } from 'antd'
 import CategoryService from '@/service/CategoryService'
+import ProductService from '@/service/ProductService'
 
 const { Option } = Select
+const initForm = {
+  service: {
+    value: false,
+    required: false, 
+  },
+  type: {
+    value: 'product',
+    required: false
+  },
+  group: {
+    value: '0',
+    required: false
+  },
+  category: {
+    value: '',
+    required: true,
+    valid: true
+  },
+  barcode: {
+    value: '',
+    required: false
+  },
+  name: {
+    value: '',
+    required: true,
+    valid: true
+  },
+  brand: {
+    value: '',
+    required: false
+  },
+}
 
 const ProductRegisterDrawer = ({
   open,
   setOpen,
   edit,
-  groups
+  groups,
+  product,
+  getProducts
 } : {
   open: boolean,
   setOpen: (c: boolean) => void,
   edit: boolean,
-  groups: IGroup[]
+  groups: IGroup[],
+  product: IProductTable|null,
+  getProducts: () => void
 }) => {
+  const [messageApi, contextHolder] = message.useMessage()
+  const [loadingCategories, setLoadingCategories] = useState<boolean>(false)
+
   const [isCategories, setCategories] = useState<ICategory[]>([])
-  const [form, setForm] = useState<IProductForm>({
-    service: false,
-    type: 'product',
-    group: '0',
-    category: '0'
-  })
+  const [form, setForm] = useState<IProductForm>(initForm)
+
+  const setValueForm = (key: string|string[] , value: any) => {
+    if (key instanceof Array) {
+      key.forEach((item, index) => {
+        form[item].value = value[index]
+      })
+    }else{
+      form[key].value = value 
+    }
+    setForm({...form})
+  }
 
   const getCategories = async (id: string) => {
+    setLoadingCategories(true)
     const response = await CategoryService.list(id)
     const draftCategories = response.data
     setCategories(draftCategories)
-    setForm({...form, category: draftCategories.length > 0 ? draftCategories[0].id : '0'})
+    if (draftCategories.length > 0) {
+      setValueForm(['group','category'], [id, draftCategories[0].id])
+    }else{
+      setValueForm('category', '')    
+    }
+    setLoadingCategories(false)
   }
 
   const onChangeGroup = (value: string) => {
-    setForm({...form, group: value})
+    setValueForm('group', value)
     getCategories(value)
   }
 
@@ -42,16 +92,46 @@ const ProductRegisterDrawer = ({
     setOpen(false);
   }
 
+  const onSend =async () => {
+    const response = await ProductService.store({
+      categoryID: form.category.value,
+      name: form.name.value,
+      service: form.service.value,
+      type: form.type.value,
+      barcode: form.barcode.value,
+      brand: form.brand.value,
+      presentations:[]
+    })
+
+    if (response.success) {
+      messageApi.open({
+        type: 'success',
+        content: response.message,
+      })
+      getProducts()
+      onClose()
+    }else{
+      messageApi.open({
+        type: 'error',
+        content: response.message,
+      })
+    }
+  }
+
   useEffect(() => {
     if (groups.length > 0) {
-      setForm({...form, group: `${groups[0].id}`})
+      setValueForm('group', groups[0].id)
       getCategories(groups[0].id)
     }
   }, [groups])
 
+  useEffect(() => {
+    setForm({...initForm})
+  }, [open])
+
   return (
     <Drawer
-      title={!edit ? 'Registrar Producto' : 'Editar Producto'}
+      title={!edit ? 'Registrar Producto' : `Editar: ${product?.name}`}
       width={720}
       onClose={onClose}
       open={open}
@@ -63,97 +143,53 @@ const ProductRegisterDrawer = ({
       extra={
         <Space>
           <Button onClick={onClose}>Cancelar</Button>
-          <Button onClick={onClose} type="primary">
+          <Button onClick={onSend} type="primary">
             {!edit ? 'Registrar' : 'Editar'}
           </Button>
         </Space>
       }
     >
-      <Form 
-        layout="vertical" 
-      >
-        <Row gutter={16}>
-          <Col span={12}>
-            <Form.Item
-              name="barcode"
-              label="Codigo Barra"
-            >
-              <Input autoComplete='off' placeholder="###########" />
-            </Form.Item>
-          </Col>
-          <Col span={12}>
-            <Form.Item
-              name="name"
-              label="Nombre"
-              rules={[{ required: true, message: 'Nombre es obligatorio' }]}
-            >
-              <Input
-                autoComplete='off'
-                placeholder="Nombre..."
-              />
-            </Form.Item>
-          </Col>
-        </Row>
-        <Row gutter={16}>
-          <Col span={12}>
-            <Form.Item
-              name="brand"
-              label="Marca"
-            >
-              <Input autoComplete='off' placeholder="Ingrese Marca" />
-            </Form.Item>
-          </Col>
-          <Col span={12}>
-            <Form.Item
-              name="service"
-              label="Servicio"
-            >
-              <Switch checked={form.service} onChange={(checked: boolean) => setForm({...form, service: checked})} />
-            </Form.Item>
-          </Col>
-        </Row>
-        <Row gutter={16}>
-          <Col span={8}>
-            <Form.Item
-              name="type"
-              label="Tipo"
-              rules={[{ required: true, message: 'El tipo es Obligatorio' }]}
-            >
-              <Select value={form.type} placeholder="Seleccione tipo" onChange={(value: string) => setForm({...form, type: value})}>
-                <Option value="product">Producto</Option>
-                <Option value="food">Comida</Option>
-                <Option value="supply">Insumo</Option>
-              </Select>
-            </Form.Item>
-          </Col>
-          <Col span={8}>
-            <Form.Item
-              name="group"
-              label="Grupo"
-              rules={[{ required: true, message: 'Grupo Obligatorio' }]}
-            >
-              <Select value={form.group} onChange={onChangeGroup} placeholder="Seleccione grupo">
-                {
-                  groups.map(obj => <Option key={obj.id} value={obj.id}>{obj.description}</Option>)
-                }
-              </Select>
-            </Form.Item>
-          </Col>
-          <Col span={8}>
-            <Form.Item
-              name="category"
-              label="Categoria"
-              rules={[{ required: true, message: 'Categoria Obligatorio' }]}
-            >
-              <Select value={form.category} placeholder="Seleccione categoria">
-                {
-                  isCategories.map(obj => <Option key={obj.id} value={obj.id}>{obj.description}</Option>)
-                }
-              </Select>
-            </Form.Item>
-          </Col>
-        </Row>
-      </Form>
+      {contextHolder}
+      <Row gutter={[16, 24]} >
+        <Col span={8}>
+          <Input autoComplete='off' value={form.barcode.value} onChange={(e) => setValueForm('barcode' , e.target.value)} placeholder="###########" />
+        </Col>
+        <Col span={16}>
+          <Input
+            value={form.name.value}
+            autoComplete='off'
+            placeholder="Nombre..."
+            onChange={(e) => setValueForm('name' , e.target.value)}
+          />
+        </Col>
+        <Col span={12}>
+          <Input autoComplete='off' value={form.brand.value} onChange={(e) => setValueForm('brand' , e.target.value)} placeholder="Ingrese Marca" />
+        </Col>
+        <Col span={12}>
+          <Switch checked={Boolean(form.service.value)} onChange={(checked: boolean) => setValueForm('service' , checked)} />
+        </Col>
+        <Col span={8}>
+          <Select className='w-full' value={String(form.type.value)} placeholder="Seleccione tipo" onChange={(value: string) => setValueForm('type' , value)}>
+            <Option value="product">Producto</Option>
+            <Option value="food">Comida</Option>
+            <Option value="supply">Insumo</Option>
+          </Select>
+        </Col>
+        <Col span={8}>
+          <Select className='w-full' value={String(form.group.value)} onChange={onChangeGroup} placeholder="Seleccione grupo">
+            {
+              groups.map(obj => <Option key={obj.id} value={`${obj.id}`}>{obj.description}</Option>)
+            }
+          </Select>
+        </Col>
+        <Col span={8}>
+          <Select loading={loadingCategories} disabled={loadingCategories} className='w-full' value={String(form.category.value)} placeholder="Seleccione categoria">
+            {
+              isCategories.map(obj => <Option key={obj.id} value={`${obj.id}`}>{obj.description}</Option>)
+            }
+          </Select>
+        </Col>
+      </Row>
     </Drawer>
   )
 }

@@ -9,14 +9,17 @@ const { Title } = Typography
 const items = [
     {
       key: 'import',
+      disabled: true,
       label:  <><CloudUploadOutlined /> Importar</>,
     },
     {
       key: 'export',
+      disabled: true,
       label: <><CloudDownloadOutlined /> Exportar</>,
     },
     {
       key: 'download',
+      disabled: true,
       label: <><DownloadOutlined /> Plantilla</>,
     }
 ]

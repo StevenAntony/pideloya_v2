@@ -9,18 +9,24 @@ const ProductListTable = ({
   products,
   setEdit,
   setSelectProduct,
-  setOpen
+  setOpenRegisterDrawer,
+  setOpenPresentationModal,
+  loadingListProduct
 } : {
   products: IProductTable[],
   setEdit: (c: boolean) => void,
   setSelectProduct: (c: IProductTable|null) => void,
-  setOpen: (c: boolean) => void,
+  setOpenRegisterDrawer: (c: boolean) => void,
+  setOpenPresentationModal: (c: boolean) => void,
+  loadingListProduct: boolean
 }) => {
 
   const onClick: MenuProps['onClick'] = (props) => {
     if (props.key === 'edit') {
       setEdit(true)
-      setOpen(true)
+      setOpenRegisterDrawer(true)
+    }else if(props.key === 'presentation'){
+      setOpenPresentationModal(true)
     }
   }
 
@@ -30,12 +36,8 @@ const ProductListTable = ({
       label: <><EditOutlined /> Editar</>
     },
     {
-      key: 'price',
-      label: <><DollarOutlined /> Precios</>,
-    },
-    {
-      key: 'unit',
-      label: <><ApartmentOutlined /> Unidades</>,
+      key: 'presentation',
+      label: <><DollarOutlined /> Presentación</>,
     },
     {
         key: 'status',
@@ -88,7 +90,7 @@ const ProductListTable = ({
 
   return (
       <div className="p-8">
-          <Table bordered={true} columns={columns} dataSource={products} />
+          <Table loading={loadingListProduct}  bordered={true} columns={columns} dataSource={products} />
       </div>
   )
 }

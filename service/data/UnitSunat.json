@@ -1,0 +1,42 @@
+[
+    {
+        "key": 1,
+        "abbreviation": "ZZ",
+        "name": "UNIDAD (SERVICIOS)"
+    },
+    {
+        "key": 2,
+        "abbreviation": "NIU",
+        "name": "UNIDAD (BIENES)"
+    },
+    {
+        "key": 3,
+        "abbreviation": "TU",
+        "name": "TUBOS"
+    },
+    {
+        "key": 4,
+        "abbreviation": "LTR",
+        "name": "LITRO"
+    },
+    {
+        "key": 5,
+        "abbreviation": "KGM",
+        "name": "KILOGRAMO"
+    },
+    {
+        "key": 6,
+        "abbreviation": "DZN",
+        "name": "DOCENA"
+    },
+    {
+        "key": 7,
+        "abbreviation": "BX",
+        "name": "CAJA"
+    },
+    {
+        "key": 8,
+        "abbreviation": "BO",
+        "name": "BOTELLAS"
+    }
+]

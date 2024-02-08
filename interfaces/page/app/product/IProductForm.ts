@@ -1,6 +1,10 @@
 interface IProductForm {
-    service: boolean;
-    type: string;
-    group: string;
-    category: string;
+    [key: string]: IForm;
+    service: IForm;
+    type: IForm;
+    group: IForm;
+    category: IForm;
+    barcode: IForm;
+    name: IForm;
+    brand: IForm;
 }

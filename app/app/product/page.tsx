@@ -2,12 +2,16 @@
 import ProductHead from "@/components/page/app/product/ProductHead"
 import ProductListTable from "@/components/page/app/product/ProductListTable"
 import ProductRegisterDrawer from "@/components/page/app/product/ProductMaintainerDrawer"
+import ProductPresentationModal from "@/components/page/app/product/ProductPresentationModal"
 import GroupService from "@/service/GroupService"
 import ProductService from "@/service/ProductService"
 import { useEffect, useState } from "react"
 
 const ProductPage = () => {
+    const [loadingListProduct, setLoadingListProduct] = useState<boolean>(false)
+
     const [openRegisterDrawer, setOpenRegisterDrawer] = useState<boolean>(false)
+    const [openPresentationModal, setOpenPresentationModal] = useState<boolean>(false)
     const [editMaintainerDrawer, setEditMaintainerDrawer] = useState<boolean>(false)
     const [isGroups, setGroups] = useState<IGroup[]>([])
     const [isProducts, setProducts] = useState<IProductTable[]>([])
@@ -19,7 +23,9 @@ const ProductPage = () => {
     }
 
     const getProducts = async () => {
+        setLoadingListProduct(true)
         const response = await ProductService.list()
+        setLoadingListProduct(false)
         setProducts(response.data)
     }
 
@@ -41,7 +47,9 @@ const ProductPage = () => {
                     products={isProducts}
                     setEdit={setEditMaintainerDrawer}
                     setSelectProduct={setSelectProduct}
-                    setOpen={setOpenRegisterDrawer}
+                    setOpenRegisterDrawer={setOpenRegisterDrawer}
+                    setOpenPresentationModal={setOpenPresentationModal}
+                    loadingListProduct={loadingListProduct}
                 />
             </div>
             <ProductRegisterDrawer 
@@ -49,6 +57,12 @@ const ProductPage = () => {
                 setOpen={setOpenRegisterDrawer}
                 edit={editMaintainerDrawer}
                 groups={isGroups}
+                product={selectProduct}
+                getProducts={getProducts}
+            />
+            <ProductPresentationModal 
+                open={openPresentationModal}
+                product={selectProduct}
             />
         </div>
     )

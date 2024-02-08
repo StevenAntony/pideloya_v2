@@ -65,9 +65,20 @@ const list = async () => {
     }
 }
 
+const store = async (params: IRequestProduct) => {
+    const response = await Api.Post(`products`, params)
+    
+    return {
+        success: response.success,
+        data: response.data,
+        message: response.message
+    }
+}
+
 const ProductService = {
     getProductForSale,
-    list
+    list,
+    store
 }
 
 export default ProductService
