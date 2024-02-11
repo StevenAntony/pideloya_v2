@@ -1,0 +1,1 @@
+type ITypeProduct = 'product'|'food'|'supply'

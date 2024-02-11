@@ -62,6 +62,18 @@ const ProductListTable = ({
       key: 'name',
     },
     {
+      title: 'Tipo',
+      dataIndex: 'type',
+      key: 'type',
+      render: (_, { type }) => (
+        <>
+          <Tag color={type === 'product' ? 'blue' : ( type === 'food' ? 'red' : 'gold' )} >
+            {type === 'product' ? 'Producto' : ( type === 'food' ? 'Comida' : 'Insumo' )}
+          </Tag>
+        </>
+      )
+    },
+    {
       title: 'Precio Venta',
       key: 'prices',
       dataIndex: 'prices',

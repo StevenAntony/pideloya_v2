@@ -59,6 +59,7 @@ const ProductPage = () => {
                 groups={isGroups}
                 product={selectProduct}
                 getProducts={getProducts}
+                setEdit={setEditMaintainerDrawer}
             />
             <ProductPresentationModal 
                 open={openPresentationModal}
