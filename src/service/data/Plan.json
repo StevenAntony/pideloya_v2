@@ -1,0 +1,49 @@
+[
+    {
+        "id": "basic",
+        "name": "Básico",
+        "price": {
+            "month": "S/ 40",
+            "year": "S/ 400"
+        },
+        "includes": [
+            "3 usuarios",
+            "1 almacén",
+            "200 comprobante a Sunat",
+            "Modulo: Caja, Venta, Usuario, Mantendor, Consulta, Reportes"
+        ]
+    },
+    {
+        "id": "normal",
+        "name": "Normal",
+        "price": {
+            "month": "S/ 70",
+            "year": "S/ 700"
+        },
+        "includes": [
+            "Todo básico",
+            "+5 usuarios, total 8 usuarios",
+            "+2 almacén, total 3 almacenes",
+            "400 comprobante a Sunat",
+            "300 emails",
+            "+Modulo: Compras, Control stock"
+        ]
+    },
+    {
+        "id": "pro",
+        "name": "Pro",
+        "price": {
+            "month": "S/ 100",
+            "year": "S/ 1000"
+        },
+        "includes": [
+            "Todo normal",
+            "+7 usuarios, total 15 usuarios",
+            "+5 almacén, total 8 almacenes",
+            "800 comprobante a Sunat",
+            "600 emails",
+            "Analisis estadisticos",
+            "Programar envíos sunat"
+        ]
+    }
+]

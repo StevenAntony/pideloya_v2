@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "name": "Inicio",
+        "url" : "/app",
+        "icon": "dashboard"
+    },
+    {
+        "id": 2,
+        "name": "Caja",
+        "url" : "",
+        "icon": "",
+        "children": [{
+            "id": 22,
+            "name": "Caja",
+            "url" : "/app/cash",
+            "icon": ""
+        },{
+            "id": 21,
+            "name": "Movimientos",
+            "url" : "/app/movement",
+            "icon": ""
+        }]
+    },
+    {
+        "id": 3,
+        "name": "Venta",
+        "url" : "",
+        "icon": "",
+        "children": [{
+            "id": 33,
+            "name": "Venta",
+            "url" : "/app/sale",
+            "icon": ""
+        },{
+            "id": 34,
+            "name": "Cobrar",
+            "url" : "/app/collect-sale",
+            "icon": ""
+        },{
+            "id": 35,
+            "name": "Eliminar",
+            "url" : "/app/cancel-sale",
+            "icon": ""
+        }]
+    },
+    {
+        "id": 6,
+        "name": "Persona",
+        "url" : "",
+        "icon": "",
+        "children": [{
+            "id": 61,
+            "name": "Cliente",
+            "url" : "/app/customer",
+            "icon": ""
+        }]
+    },
+    {
+        "id": 7,
+        "name": "Usuario",
+        "url" : "",
+        "icon": "",
+        "children": [{
+            "id": 71,
+            "name": "Usuario",
+            "url" : "/app/user",
+            "icon": ""
+        },{
+            "id": 72,
+            "name": "Acceso",
+            "url" : "/app/access",
+            "icon": ""
+        }]
+    },
+    {
+        "id": 8,
+        "name": "Almacen",
+        "url" : "",
+        "icon": "",
+        "children": [{
+            "id": 81,
+            "name": "Control Stock",
+            "url" : "/app/stock",
+            "icon": ""
+        }]
+    },
+    {
+        "id": 4,
+        "name": "Mantenedor",
+        "url" : "",
+        "icon": "",
+        "children": [{
+            "id": 41,
+            "name": "Producto",
+            "url" : "/app/product",
+            "icon": ""
+        }]
+    }
+]
